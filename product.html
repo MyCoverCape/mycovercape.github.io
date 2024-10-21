@@ -14,6 +14,35 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .price-tag {
+            width: 200px;
+            height: 120px;
+            background-color: #ffe600; /* Yellow color */
+            border-radius: 50%; /* Oval shape */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            font-family: 'Arial', sans-serif;
+            color: #000; /* Black text color */
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* Shadow to simulate 3D effect */
+            position: relative;
+        }
+
+        .price-tag::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            right: -15px;
+            width: 200px;
+            height: 120px;
+            background-color: #000; /* Black shadow */
+            border-radius: 50%;
+            z-index: -1;
+            transform: rotate(5deg);
+        }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -42,8 +71,18 @@
     <!-- Carousel Section -->
     <section id="carousel">
         <div class="container px-5 my-5">
+            Pre-order the boys and girls cover capes today!<br/>
+            See below for more details!<br/>
+        </div>
+        <div class="container px-5 my-5">
             <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                 <p>Please see our blue boys cape below</p>
+                Boys cover capes start at: £34.99 <br/> 
+                <a href="https://wa.me/447873801238?text=Please send me details about the Boys Body Hide, I've come from mycovercap.com">Contact us on WhatsApp by clicking here</a><br/> 
+                <div class="price-tag">
+                    £34.99
+                </div><br/>
+
                 <!-- Carousel Indicators -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -99,7 +138,15 @@
         <section id="carousel2">
             <div class="container px-5 my-5">
                 <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
-                    <p>Please see our pink girls cape below</p>
+                    <p>Please see our pink girls cape below</p><br/>
+                    Girls cover capes start at: £29.99 <br/>
+                    <a href="https://wa.me/447873801238?text=Please send me details about the Girls Body Hide, I've come from mycovercap.com">Contact us on WhatsApp by clicking here</a><br/> 
+
+                    <div class="price-tag">
+                        £29.99
+                    </div><br/>
+    
+
                     <!-- Carousel Indicators -->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
